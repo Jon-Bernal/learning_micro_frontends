@@ -1,7 +1,5 @@
 import faker from "faker";
 
-
-
 const mount = (el) => {
 
   let products = '';
@@ -23,7 +21,9 @@ if(process.env.NODE_ENV == 'development') {
 
   // Assuming our container doesn't have an element with id 'dev-products
   // we are probably running in isolation
-  mount(el)
+  if(el){
+    mount(el)
+  }
 }
 
 // context 2

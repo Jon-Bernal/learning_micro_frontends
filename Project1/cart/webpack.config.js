@@ -11,7 +11,7 @@ module.exports = {
       name: 'cart',
       filename: 'remoteEntry.js',
       exposes: {
-        './CartShow': './src/index'
+        './CartShow': './src/bootstrap'
       },
       shared: ['faker'] // shares dependency with container and other federated remotes so you don't download them twice
     }),
