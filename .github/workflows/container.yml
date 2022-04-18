@@ -29,6 +29,9 @@ jobs:
       - name: Build frontend
         run: npm run build
 
+      - name: Cache busting
+        run: echo "Github actions need some more work"
+
       - name: Configure AWS CLI
         uses: aws-actions/configure-aws-credentials@v1
         with:
