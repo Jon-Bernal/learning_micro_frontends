@@ -6,6 +6,11 @@ on:
       - main
     paths:
       - "packages/container/**"
+  workflow_dispatch:
+    branches:
+      - main
+    paths:
+      - "packages/container/**"
 
 defaults:
   run:
