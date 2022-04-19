@@ -12,6 +12,7 @@ const prodConfig = {
     new ModuleFederationPlugin({
       name: 'marketing',
       filename: 'remoteEntry.js',
+      publicPath: '/marketing/latest/', // path in s3 bucket
       exposes: {
         './MarketingApp': './src/bootstrap'
       },
