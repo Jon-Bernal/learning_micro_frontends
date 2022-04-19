@@ -6,13 +6,13 @@ const commonConfig = require('./webpack.common')
 const prodConfig = {
   mode: 'production',
   output: {
-    filename: '[name].[contenthash].js'
+    filename: '[name].[contenthash].js',
+    publicPath: '/marketing/latest/', // path in s3 bucket
   },
   plugins: [
     new ModuleFederationPlugin({
       name: 'marketing',
       filename: 'remoteEntry.js',
-      publicPath: '/marketing/latest/', // path in s3 bucket
       exposes: {
         './MarketingApp': './src/bootstrap'
       },
