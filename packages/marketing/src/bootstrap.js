@@ -7,6 +7,7 @@ import App from "./App";
 const mount = (el, { onNavigate, defaultHistory }) => {
   // uses browser router if in local dev mode
   const history = defaultHistory || createMemoryHistory();
+  console.log('onNavigate :>> ', onNavigate);
   if (onNavigate) {
     history.listen(onNavigate);
   }
@@ -14,9 +15,6 @@ const mount = (el, { onNavigate, defaultHistory }) => {
 
   return {
     onParentNavigate({ pathname: nextPathname }) {
-      console.log("Container just navigated");
-      console.log("nextPathname: ", nextPathname);
-      console.log("history pathname: ", history.location.pathname);
       if (nextPathname !== history.location.pathname) {
         history.push(nextPathname);
       }

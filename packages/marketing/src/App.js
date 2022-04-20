@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import {Switch, Route, Router} from 'react-router-dom'
 import {StylesProvider, createGenerateClassName} from '@material-ui/core/styles'
 
@@ -10,6 +10,11 @@ const generateClassName = createGenerateClassName({
 })
 
 export default ({history}) => {
+
+  useEffect(() => {
+    console.log("history: ", history);
+  },[])
+
   return (
     <div>
       <StylesProvider generateClassName={generateClassName}>

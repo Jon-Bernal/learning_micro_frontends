@@ -1,0 +1,128 @@
+[
+  {
+    "msg": {
+      "eventFromEventBus": {
+        "partnerId": "354b5c1a-7c66-4498-96e6-58c182933291",
+        "externalId": "286716",
+        "detailRecords": {
+          "employeeRecords": [
+            {
+              "recordType": "create-employee",
+              "recordExternalId": "286716",
+              "recordVersion": "2021-11-23",
+              "recordDetail": {
+                "population": "D",
+                "employee_id": "286716",
+                "Dependent_id": "5220015",
+                "employment_type": "H",
+                "First Name": "Carol",
+                "Last Name": "Gorman",
+                "Home Address - Address 1": "4741 Megan Road",
+                "Home Address - City": "Florence",
+                "Home Address - State": "SC",
+                "Home Address - Zip": "29505",
+                "Birth Date": "1960-03-03",
+                "Gender": "F",
+                "Relationship": "S",
+                "Initial Hire Date": "2018-03-19",
+                "Latest Hire Date": "2018-03-19",
+                "Benefits Eligible Date": "2022-02-13",
+                "Employment Status": "A",
+                "Benefits Eligibility Status": "E",
+                "Location": "04313",
+                "Job Code": "1026",
+                "EEO Code": "8",
+                "LANGUAGE CODE": "ENG"
+              }
+            }
+          ]
+        },
+        "metadata": {
+          "eventType": "WM-employee-ingestion",
+          "version": "2021-11-23",
+          "timestamp": "2022-04-19T00:00:00Z",
+          "partitionKey": "286716",
+          "eventBusInfo": {
+            "producer": "data-ingestion-pipeline",
+            "awsMetadata": {
+              "functionName": "event-bus-prod",
+              "functionVersion": "204",
+              "invokedFunctionArn": "arn:aws:lambda:us-west-2:947618278001:function:event-bus-prod:live",
+              "awsRequestId": "1cf9118b-3fcb-42c1-8cac-f4a4ccae2f17"
+            },
+            "uuid": "905c15fe-c553-4cb1-b972-eab38841166a",
+            "receiptTimestamp": "2022-04-20T00:20:20.989545"
+          }
+        }
+      },
+      "awsRequestId": "0baca6f4-9ff0-4b64-8c7f-5538a81e26bf"
+    },
+    "error": {
+      "message": "Error: insert or update on table \"dependent\" violates foreign key constraint \"dependent_employee_fkey\""
+    }
+  },
+  {
+    "msg": {
+      "eventFromEventBus": {
+        "partnerId": "354b5c1a-7c66-4498-96e6-58c182933291",
+        "externalId": "331394",
+        "detailRecords": {
+          "employeeRecords": [
+            {
+              "recordType": "create-employee",
+              "recordExternalId": "331394",
+              "recordVersion": "2021-11-23",
+              "recordDetail": {
+                "population": "D",
+                "employee_id": "331394",
+                "Dependent_id": "479220048",
+                "employment_type": "H",
+                "First Name": "Maricela",
+                "Last Name": "PRIETO",
+                "Home Address - Address 1": "9220 E TURTLE ROCK RD",
+                "Home Address - City": "PRESCOTT VLY",
+                "Home Address - State": "AZ",
+                "Home Address - Zip": "86315",
+                "Birth Date": "1989-06-13",
+                "Gender": "F",
+                "Relationship": "S",
+                "Initial Hire Date": "2022-02-14",
+                "Latest Hire Date": "2022-02-14",
+                "Benefits Eligible Date": "2022-05-15",
+                "Employment Status": "T",
+                "Benefits Eligibility Status": "E",
+                "Location": "05438",
+                "Job Code": "1042",
+                "Separation Date": "2022-04-15",
+                "Separation Reason": "TERWOR",
+                "EEO Code": "7",
+                "LANGUAGE CODE": "ENG"
+              }
+            }
+          ]
+        },
+        "metadata": {
+          "eventType": "WM-employee-ingestion",
+          "version": "2021-11-23",
+          "timestamp": "2022-04-19T00:00:00Z",
+          "partitionKey": "331394",
+          "eventBusInfo": {
+            "producer": "data-ingestion-pipeline",
+            "awsMetadata": {
+              "functionName": "event-bus-prod",
+              "functionVersion": "204",
+              "invokedFunctionArn": "arn:aws:lambda:us-west-2:947618278001:function:event-bus-prod:live",
+              "awsRequestId": "1cf9118b-3fcb-42c1-8cac-f4a4ccae2f17"
+            },
+            "uuid": "ccc9b234-fc8c-411d-863c-dc96f7593119",
+            "receiptTimestamp": "2022-04-20T00:20:20.989507"
+          }
+        }
+      },
+      "awsRequestId": "12bca791-2c68-4e60-b987-332cc690fc6c"
+    },
+    "error": {
+      "message": "Error: insert or update on table \"dependent\" violates foreign key constraint \"dependent_employee_fkey\""
+    }
+  }
+]
