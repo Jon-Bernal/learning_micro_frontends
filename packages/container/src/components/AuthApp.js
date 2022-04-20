@@ -1,4 +1,4 @@
-import { mount } from "marketing/MarketingApp";
+import { mount } from "auth/AuthApp";
 import React, { useRef, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 
@@ -19,7 +19,7 @@ export default () => {
     });
 
     history.listen(onParentNavigate);
-    // onParentNavigate(history.location);
+    // onParentNavigate(history.location); // this is necessary to set the location on initial load
   }, []);
 
   return <div ref={ref} />;
