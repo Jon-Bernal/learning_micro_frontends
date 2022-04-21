@@ -3,10 +3,10 @@ const {VueLoaderPlugin} = require('vue-loader');
 module.exports = {
   entry: "./src/index.js",
   output: {
-    filename: "[name].contenthash].js",
-    resolve: {
-      extensions: [".js", ".vue"],
-    },
+    filename: "[name].[contenthash].js",
+  },
+  resolve: {
+    extensions: [".js", ".vue"],
   },
   module: {
     rules: [
@@ -36,5 +36,5 @@ module.exports = {
       },
     ],
   },
-  plugins: [new VlueLoaderPlugin()]
+  plugins: [new VueLoaderPlugin()]
 };
